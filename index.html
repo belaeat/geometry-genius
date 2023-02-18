@@ -14,9 +14,9 @@
 <body class="container-lg mt-4">
     <!-- Header section here -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 bg-primary-subtle">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 bg-primary-subtle rounded">
             <div class="container-fluid">
-                <div>
+                <div class="mt-2">
                     <h2>Interactive</h2>
                     <p>Geometry Genius</p>
                 </div>
@@ -28,89 +28,100 @@
     </header>
 
     <!-- Main section here -->
-    <main class="my-5">
-        <!-- Geometrical Cards here -->
-        <!-- Triangle Shape -->
-        <div class="card px-4 py-4 text-center" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title mt-5">Triangle</h5>
-                <p class="card-text">Area (A) = 0.5 x b x h</p>
-                <div class="d-flex my-4">
-                    <div class="d-flex align-items-center me-2">
-                        <input type="text" class="w-100 px-2" placeholder="b">
-                        <p class="ms-2 align-self">cm</p>
+    <main class="container my-5">
+        <section>
+            <div class="geometrical-shape">
+                <!-- Geometrical Cards here -->
+                <div class="row">
+                    <!-- Triangle Shape -->
+                    <div class="col-sm-12 col-md-6 card px-4 py-4 text-center" style="width: 18rem;">
+                        <img src="images/triangle.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-5">Triangle</h5>
+                            <p class="card-text">Area (A) = 0.5 x b x h</p>
+                            <div class="d-flex my-4">
+                                <div class="d-flex align-items-center me-2">
+                                    <input type="text" class="w-100 px-2" placeholder="b">
+                                    <p class="ms-2 align-self">cm</p>
+                                </div>
+                                <div class="d-flex align-items-center me-2">
+                                    <input type="text" class="w-100 px-2" placeholder="h">
+                                    <p class="ms-2 align-self">cm</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center me-2">
-                        <input type="text" class="w-100 px-2" placeholder="h">
-                        <p class="ms-2 align-self">cm</p>
+                    <!-- Rectangle Shape -->
+                    <div class="col-sm-12 col-md-6 card px-4 py-4 text-center" style="width: 18rem;">
+                        <img src="images/rectangle.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-5">Rectangle</h5>
+                            <p class="card-text">Area (A) = w x l</p>
+                            <div class="d-flex my-4">
+                                <div class="d-flex align-items-center me-2">
+                                    <input type="text" class="w-100 px-2" placeholder="b">
+                                    <p class="ms-2 align-self">cm</p>
+                                </div>
+                                <div class="d-flex align-items-center me-2">
+                                    <input type="text" class="w-100 px-2" placeholder="h">
+                                    <p class="ms-2 align-self">cm</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <!-- Parallelogram Shape -->
+                    <div class="col-sm-12 col-md-6 card px-4 py-4 text-center" style="width: 18rem;">
+                        <img src="images/parallelogram.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-5">Parallelogram</h5>
+                            <p class="card-text">Area (A) = b x h</p>
+                            <p>b=10cm, h=12cm</p>
+                            <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <!-- Rhombus Shape -->
+                    <div class="col-sm-12 col-md-6 card px-4 py-4 text-center" style="width: 18rem;">
+                        <img src="images/rhombus.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-5">Rhombus</h5>
+                            <p class="card-text">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                            <p>d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</p>
+                            <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <!-- Pentagon Shape -->
+                    <div class="col-sm-12 col-md-6 card px-4 py-4 text-center" style="width: 18rem;">
+                        <img src="images/pentagon.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-5">Pentagon</h5>
+                            <p class="card-text">Area (A) = 0.5 x p x b</p>
+                            <p>p=6cm, b=10cm</p>
+                            <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <!-- Ellips Shape -->
+                    <div class="col-sm-12 col-md-6 card px-4 py-4 text-center" style="width: 18rem;">
+                        <img src="images/ellipse.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-5">Triangle</h5>
+                            <p class="card-text">Area (A) = &pi;ab</p>
+                            <p>a=10cm, b=4cm</p>
+                            <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
+                        </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
             </div>
-        </div>
-        <!-- Rectangle Shape -->
-        <div class="card px-4 py-4 text-center" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title mt-5">Rectangle</h5>
-                <p class="card-text">Area (A) = w x l</p>
-                <div class="d-flex my-4">
-                    <div class="d-flex align-items-center me-2">
-                        <input type="text" class="w-100 px-2" placeholder="b">
-                        <p class="ms-2 align-self">cm</p>
-                    </div>
-                    <div class="d-flex align-items-center me-2">
-                        <input type="text" class="w-100 px-2" placeholder="h">
-                        <p class="ms-2 align-self">cm</p>
-                    </div>
-                </div>
-                <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
+            <!-- Area result board here -->
+            <div class="result-board">
+
             </div>
-        </div>
-        <!-- Parallelogram Shape -->
-        <div class="card px-4 py-4 text-center" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title mt-5">Parallelogram</h5>
-                <p class="card-text">Area (A) = b x h</p>
-                
-                <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
-            </div>
-        </div>
-        <!-- Rhombus Shape -->
-        <div class="card px-4 py-4 text-center" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title mt-5">Rhombus</h5>
-                <p class="card-text">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
-                
-                <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
-            </div>
-        </div>
-        <!-- Pentagon Shape -->
-        <div class="card px-4 py-4 text-center" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title mt-5">Pentagon</h5>
-                <p class="card-text">Area (A) = 0.5 x p x b</p>
-                
-                <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
-            </div>
-        </div>
-        <!-- Ellips Shape -->
-        <div class="card px-4 py-4 text-center" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title mt-5">Triangle</h5>
-                <p class="card-text">Area (A) = &pi;ab</p>
-                
-                <a href="#" class="btn btn-primary text-center px-5">Calculate</a>
-            </div>
-        </div>
+        </section>
+
     </main>
 
-    <!-- JS here -->
+    <!--Bootstrap JS here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
