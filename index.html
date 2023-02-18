@@ -28,20 +28,101 @@
 
         <!-- Main section here -->
         <section class="mt-12">
-            <div class="card-container">
+            <div class="card-container w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Triangle Card here -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
+                        <h2 class="card-title text-3xl">Triangle</h2>
                         <p>Area (A) = 0.5 x b x h</p>
-                        <div class="w-25 flex mt-2 content-center">
-                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="b"> <p>cm</p>
-                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="h"> 
-                            <p>cm</p>
+                        <div class="w-25 flex my-3 content-center">
+                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="b">
+                            <p class="mr-2">cm</p>
+                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="h">
+                            <p class="mr-2">cm</p>
                         </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rectangle Card here -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div class="w-25 flex my-3 content-center">
+                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="w">
+                            <p class="mr-2">cm</p>
+                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="l">
+                            <p class="mr-2">cm</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parallelogram Card here -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/parallelogram.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <p>b=10cm, h=12cm</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rhombus Card here -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rhombus.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Rhombus</h2>
+                        <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <p>d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pentagon Card here -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/pentagon.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Parallelogram</h2>
+                        <p>Area (A) = 0.5 x p x b</p>
+                        <p>p=6cm, b=10cm</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ellips Card here -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/ellipse.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Ellips</h2>
+                        <p>Area (A) = &pi;ab</p>
+                        <p>a=10cm, b=4cm</p>
                         <div class="card-actions">
                             <button class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
                         </div>
@@ -49,7 +130,8 @@
                 </div>
             </div>
 
-            <div class="area-container">
+            <!-- Area Result Board here -->
+            <div class="area-container w[30%] bg-sky-600">
 
             </div>
         </section>
