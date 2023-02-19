@@ -28,6 +28,8 @@
 
         <!-- Main section here -->
         <section class="mt-12 flex flex-col md:flex-row lg:flex-row">
+
+            <!-- Geometry Card here -->
             <div class="card-container w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Triangle Card here -->
                 <div class="card w-full bg-base-100 shadow-xl">
@@ -38,13 +40,13 @@
                         <h2 class="card-title text-3xl">Triangle</h2>
                         <p>Area (A) = 0.5 x b x h</p>
                         <div class="w-25 flex my-3 content-center">
-                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="b">
+                            <input id="first-input" class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="b">
                             <p class="mr-2">cm</p>
-                            <input class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="h">
+                            <input id="second-input" class="p-2 w-24 mr-2" type="text" name="" id="" placeholder="h">
                             <p class="mr-2">cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
+                            <button id="area-calculation" class="btn btn-primary px-12 rounded-md bg-sky-600 text-white">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -136,7 +138,7 @@
 
                 <div class="overflow-x-auto">
                     <table class="table w-full">
-                        <tbody>
+                        <tbody id="table-container">
                             <!-- row 1 -->
 
                             <!-- <tr>
@@ -146,7 +148,7 @@
                                 <td>Blue</td>
                             </tr> -->
 
-                            
+
                         </tbody>
                     </table>
                 </div>
