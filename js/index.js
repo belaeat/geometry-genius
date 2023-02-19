@@ -1,4 +1,10 @@
 
+
+let serial = 0;
+document.getElementById('area-triangle').addEventListener('click', function(){
+    serial += 1;
+})
+
 /* Adding a add event listener to cause an event in DOM manipulation */
 
 document.getElementById('area-triangle').addEventListener('click', function () {
@@ -16,6 +22,7 @@ document.getElementById('area-triangle').addEventListener('click', function () {
 /* Calculating area of a Rectangle */
 
 document.getElementById('area-rectangle').addEventListener('click', function () {
+    serial += 1;
 
     // Now, we are getting the input value using getElementById().value
     let firstInput = document.getElementById('first-input-rectangle').value;
@@ -28,6 +35,7 @@ document.getElementById('area-rectangle').addEventListener('click', function () 
 /* Calculating area of Parallelogram */
 
 document.getElementById('area-parallelogram').addEventListener('click', function () {
+    serial += 1;
 
     // Now, we are getting the input value using getElementById().value
     let firstInput = document.getElementById('first-input-parallelogram').value;
@@ -39,6 +47,7 @@ document.getElementById('area-parallelogram').addEventListener('click', function
 
 /* Calculating area of Rhombus */
 document.getElementById('area-rhombus').addEventListener('click', function () {
+    serial += 1;
 
     // Now, we are getting the input value using getElementById().value
     let firstInput = document.getElementById('first-input-rhombus').value;
@@ -50,6 +59,7 @@ document.getElementById('area-rhombus').addEventListener('click', function () {
 
 /* Calculating area of Pentagon */
 document.getElementById('area-pentagon').addEventListener('click', function () {
+    serial += 1;
 
     // Now, we are getting the input value using getElementById().value
     let firstInput = document.getElementById('first-input-pentagon').value;
@@ -61,7 +71,7 @@ document.getElementById('area-pentagon').addEventListener('click', function () {
 
 /* Calculating area of ellips */
 document.getElementById('area-ellips').addEventListener('click', function () {
-
+    serial += 1;
     // Now, we are getting the input value using getElementById().value
     let firstInput = document.getElementById('first-input-ellips').value;
     let secondInput = document.getElementById('second-input-ellips').value;
@@ -71,13 +81,14 @@ document.getElementById('area-ellips').addEventListener('click', function () {
 })
 
 
+
 /* Following function named "displayData" is showing area of geometrical shap on the result board */
 
 function displayData(firstInput, secondInput, area, shapeName) {
     const container = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML = `
-        <td>${1}</td>
+        <td>${serial}</td>
         <td>${shapeName}</td>
         <td>${area}</td>
         <td><p>cm<sup>2</sup></p></td>
